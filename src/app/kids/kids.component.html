@@ -1,0 +1,17 @@
+
+<button (click)="getIndUniv()">Ind</button>
+<p></p>
+<table *ngIf="indianRecords.length > 0" >
+
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    
+    <tr *ngFor = "let india of  indianRecords"><td>{{india.name}}</td>
+        <td>{{india.country}}</td>
+        <td>{{india.alpha_two_code
+      }}</td> </tr>
+    
+      
+  </table>

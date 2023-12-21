@@ -1,0 +1,19 @@
+<p>over-view-lazy works!</p>
+<button (click)="getUsaUniv()">USA</button>
+
+<table *ngIf="universityRecords.length > 0">
+
+    <tr>
+      <th>name</th>
+      <th>country</th>
+      <th>alpha_two_code</th>
+    </tr>
+      <tr>
+        <tr *ngFor = "let usa of universityRecords">
+          <td>{{usa.name}}</td>
+          <td>{{usa.country}}</td>
+          <td>{{usa.alpha_two_code}}</td> 
+        </tr>
+     
+      
+    </table>

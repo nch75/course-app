@@ -1,0 +1,16 @@
+<p>overview-table works!;{{incomingTableData.length}}</p>
+<table>
+
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    
+    <tr *ngFor = "let india of  incomingTableData">
+        <td>{{india.name}}</td>
+        <td>{{india.country}}</td>
+        <td>{{india.alpha_two_code}}</td>
+    </tr>
+    
+      
+  </table>

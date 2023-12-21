@@ -1,0 +1,17 @@
+
+<button (click)="getUkUniv()" >UK</button>
+<table *ngIf="ukRecords.length > 0">
+<tr>
+    <th>name</th>
+    <th>country</th>
+    <th>alpha_two_code</th>
+  </tr>
+  <tr *ngFor = "let uk of ukRecords">
+    <td>{{uk.name}}</td>
+    <td>{{uk.country}}</td>
+    <td>{{uk.alpha_two_code
+  }}</td> 
+  </tr>
+  
+  
+</table>
